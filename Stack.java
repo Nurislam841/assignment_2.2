@@ -24,14 +24,6 @@ public class Stack {
         return this.items.isEmpty();
     }
 
-    public int peek() {
-        if (!isEmpty()) {
-            return this.items.get(this.items.size() - 1);
-        } else {
-            throw new IllegalStateException("Stack is empty");
-        }
-    }
-
     public void reverse() {
         if (!isEmpty()) {
             int top = pop();
